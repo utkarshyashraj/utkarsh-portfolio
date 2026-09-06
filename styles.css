@@ -119,7 +119,9 @@ a {
   position: relative;
   min-height: auto;
   display: grid;
-  align-items: end;
+  grid-template-columns: minmax(0, 1.15fr) auto;
+  align-items: center;
+  column-gap: clamp(1.75rem, 5vw, 4rem);
   padding: clamp(3rem, 8vw, 5.5rem) clamp(1.25rem, 4vw, 2.5rem) clamp(2rem, 5vw, 3.25rem);
   overflow: visible;
 }
@@ -167,20 +169,16 @@ a {
 }
 
 .hero-photo-frame {
-  position: absolute;
-  right: clamp(1.25rem, 5vw, 3.75rem);
-  top: 48%;
-  transform: translateY(-50%);
-  width: min(36vw, 380px);
-  height: min(36vw, 380px);
+  position: relative;
+  z-index: 1;
+  justify-self: end;
+  width: clamp(280px, 34vw, 420px);
+  height: clamp(280px, 34vw, 420px);
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid #fff;
-  box-shadow:
-    0 0 0 1px rgba(16, 34, 28, 0.08),
-    0 22px 48px rgba(6, 20, 15, 0.2);
-  z-index: 1;
+  border: 1.5px solid rgba(16, 34, 28, 0.14);
+  box-shadow: 0 28px 56px rgba(6, 20, 15, 0.14);
   animation: photoIn 0.9s ease both;
 }
 
@@ -193,19 +191,17 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 12%;
-  border-radius: 50%;
-  clip-path: circle(50%);
+  object-position: center 14%;
 }
 
 @keyframes photoIn {
   from {
     opacity: 0;
-    transform: translateY(calc(-50% + 14px)) scale(0.96);
+    transform: translateY(16px) scale(0.97);
   }
   to {
     opacity: 1;
-    transform: translateY(-50%) scale(1);
+    transform: none;
   }
 }
 
@@ -213,6 +209,7 @@ a {
   position: relative;
   z-index: 1;
   max-width: 640px;
+  min-width: 0;
 }
 
 .brand {
@@ -562,8 +559,8 @@ a {
   }
 
   .hero-photo-frame {
-    width: min(38vw, 280px);
-    height: min(38vw, 280px);
+    width: clamp(220px, 36vw, 300px);
+    height: clamp(220px, 36vw, 300px);
   }
 
   .skills-wrap {
@@ -583,6 +580,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1.25rem;
   }
 
   .highlights-grid {
@@ -590,14 +588,11 @@ a {
   }
 
   .hero-photo-frame {
-    position: relative;
-    right: auto;
-    top: auto;
-    transform: none;
-    width: 148px;
-    height: 148px;
-    margin: 0 0 1.1rem;
-    animation: none;
     order: -1;
+    width: 168px;
+    height: 168px;
+    justify-self: start;
+    margin: 0;
+    animation: none;
   }
 }
