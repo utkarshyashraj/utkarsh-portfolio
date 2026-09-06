@@ -195,6 +195,10 @@ a {
   animation: photoIn 0.9s ease both;
 }
 
+.hero-photo-frame.reveal {
+  overflow: hidden;
+}
+
 .hero-photo {
   display: block;
   width: 100%;
