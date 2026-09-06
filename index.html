@@ -8,13 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+  <link rel="icon" href="assets/utkarsh-avatar.jpg" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="logo" href="#top">UY</a>
+    <a class="logo" href="#top" aria-label="Utkarsh Yashraj home">
+      <img class="logo-photo" src="assets/utkarsh-avatar.jpg" alt="" width="36" height="36" />
+      <span>UY</span>
+    </a>
     <nav class="nav" aria-label="Primary">
       <a href="#work">Work</a>
       <a href="#projects">Projects</a>
@@ -30,20 +34,16 @@
         <div class="hero-grid"></div>
         <div class="hero-orb hero-orb-a"></div>
         <div class="hero-orb hero-orb-b"></div>
-        <svg class="hero-diagram" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="flow-line" d="M80 260 C220 120, 320 400, 460 250 S680 120, 720 260" stroke="currentColor" stroke-width="1.5" />
-          <circle class="node n1" cx="80" cy="260" r="8" />
-          <circle class="node n2" cx="300" cy="210" r="8" />
-          <circle class="node n3" cx="460" cy="250" r="8" />
-          <circle class="node n4" cx="720" cy="260" r="8" />
-          <text x="54" y="300" class="label">PDF</text>
-          <text x="248" y="188" class="label">Parse</text>
-          <text x="420" y="228" class="label">Embed</text>
-          <text x="668" y="300" class="label">RAG</text>
-        </svg>
       </div>
 
       <div class="hero-copy">
+        <img
+          class="hero-photo reveal"
+          src="assets/utkarsh-yashraj.jpg"
+          alt="Portrait of Utkarsh Yashraj"
+          width="704"
+          height="850"
+        />
         <h1 class="brand reveal">Utkarsh<br />Yashraj</h1>
         <p class="role reveal delay-1">AI Full Stack Engineer</p>
         <p class="lede reveal delay-2">

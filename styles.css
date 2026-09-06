@@ -75,12 +75,25 @@ a {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
   letter-spacing: 0.04em;
   line-height: 1.4;
   padding-block: 0.15rem;
+}
+
+.logo-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 1.5px solid rgba(15, 122, 95, 0.28);
+  flex-shrink: 0;
 }
 
 .nav {
@@ -164,35 +177,32 @@ a {
   animation-delay: -4s;
 }
 
-.hero-diagram {
+.hero-photo {
   position: absolute;
-  right: -2%;
-  top: 8%;
-  width: min(58vw, 720px);
-  height: auto;
-  color: rgba(15, 122, 95, 0.55);
-  opacity: 0.85;
+  right: clamp(1rem, 5vw, 3.5rem);
+  top: 52%;
+  transform: translateY(-50%);
+  width: min(36vw, 340px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 22px;
+  border: 1px solid rgba(16, 34, 28, 0.1);
+  box-shadow: 0 24px 48px rgba(6, 20, 15, 0.16);
+  z-index: 1;
+  animation: photoIn 0.9s ease both;
 }
 
-.hero-diagram .label {
-  fill: rgba(16, 34, 28, 0.45);
-  font-size: 18px;
-  font-family: var(--font-body);
+@keyframes photoIn {
+  from {
+    opacity: 0;
+    transform: translateY(calc(-50% + 18px));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
 }
-
-.flow-line {
-  stroke-dasharray: 8 10;
-  animation: dash 18s linear infinite;
-}
-
-.node {
-  fill: var(--accent);
-  animation: pulse 2.8s ease-in-out infinite;
-}
-
-.n2 { animation-delay: 0.4s; }
-.n3 { animation-delay: 0.8s; }
-.n4 { animation-delay: 1.2s; }
 
 .hero-copy {
   position: relative;
@@ -546,10 +556,8 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-diagram {
-    width: 78vw;
-    opacity: 0.45;
-    top: 0;
+  .hero-photo {
+    width: min(42vw, 280px);
   }
 
   .skills-wrap {
@@ -572,7 +580,13 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .hero-diagram {
-    display: none;
+  .hero-photo {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: min(56vw, 220px);
+    margin: 0 0 1.15rem;
+    animation: none;
   }
 }
