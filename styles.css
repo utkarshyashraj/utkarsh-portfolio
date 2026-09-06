@@ -10,6 +10,7 @@
   --brand: #06140f;
   --max: 1120px;
   --font-display: "Syne", sans-serif;
+  --font-hero: "Outfit", sans-serif;
   --font-body: "Source Sans 3", sans-serif;
 }
 
@@ -197,24 +198,24 @@ a {
 }
 
 .brand {
-  font-family: var(--font-display);
+  font-family: var(--font-hero);
   font-size: clamp(2.2rem, 5.8vw, 4.4rem);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   color: var(--brand);
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.35rem;
   overflow: visible;
 }
 
 .brand span {
   display: inline-block;
-  line-height: 1.4;
-  padding: 0.12em 0 0.22em;
+  line-height: 1.2;
+  padding: 0.08em 0.02em 0.18em;
   overflow: visible;
 }
 
 .hero h1 {
-  font-family: var(--font-display);
+  font-family: var(--font-hero);
   font-size: clamp(1.35rem, 2.8vw, 2rem);
   font-weight: 700;
   color: var(--accent);
@@ -224,8 +225,8 @@ a {
 
 .hero h1 span {
   display: inline-block;
-  line-height: 1.45;
-  padding: 0.12em 0 0.28em;
+  line-height: 1.35;
+  padding: 0.1em 0.02em 0.2em;
   overflow: visible;
 }
 
