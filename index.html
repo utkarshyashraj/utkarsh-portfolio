@@ -8,20 +8,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
   <style>
-    /* Hard guarantee: Syne/Outfit descenders must not clip in the hero */
-    .brand,
-    .hero h1 {
-      overflow: visible !important;
+    .brand-svg,
+    .role-svg {
+      display: block;
+      width: 100%;
+      max-width: 34rem;
+      height: auto;
+      overflow: visible;
     }
-    .brand span,
-    .hero h1 span {
-      display: inline-block !important;
-      overflow: visible !important;
-      line-height: 1.35 !important;
-      padding-top: 0.15em !important;
-      padding-bottom: 0.35em !important;
+    .brand-line {
+      font-family: "Source Sans 3", sans-serif;
+      font-weight: 700;
+      font-size: 92px;
+      fill: #06140f;
+    }
+    .role-line {
+      font-family: "Source Sans 3", sans-serif;
+      font-weight: 700;
+      font-size: 42px;
+      fill: #0f7a5f;
     }
   </style>
 </head>
@@ -59,8 +66,17 @@
       </div>
 
       <div class="hero-copy">
-        <p class="brand reveal"><span>Utkarsh</span> <span>Yashraj</span></p>
-        <h1 class="reveal delay-1"><span>AI Full Stack Engineer</span></h1>
+        <h1 class="brand reveal" aria-label="Utkarsh Yashraj">
+          <svg class="brand-svg" viewBox="0 0 920 250" role="img" aria-hidden="true">
+            <text x="0" y="100" class="brand-line">Utkarsh</text>
+            <text x="0" y="210" class="brand-line">Yashraj</text>
+          </svg>
+        </h1>
+        <p class="role reveal delay-1" aria-label="AI Full Stack Engineer">
+          <svg class="role-svg" viewBox="0 0 720 100" role="img" aria-hidden="true">
+            <text x="0" y="72" class="role-line">AI Full Stack Engineer</text>
+          </svg>
+        </p>
         <p class="lede reveal delay-2">
           I build production React interfaces and AI systems that turn complex documents into searchable knowledge — from reusable UI architecture to RAG pipelines on PostgreSQL.
         </p>
