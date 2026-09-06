@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utkarsh Yashraj — AI Full Stack Engineer</title>
+  <meta name="description" content="Portfolio of Utkarsh Yashraj — AI Full Stack Engineer building React apps, REST APIs, and RAG systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top">UY</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:utkarshyashraj@gmail.com">Email</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb-a"></div>
+        <div class="hero-orb hero-orb-b"></div>
+        <svg class="hero-diagram" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="flow-line" d="M80 260 C220 120, 320 400, 460 250 S680 120, 720 260" stroke="currentColor" stroke-width="1.5" />
+          <circle class="node n1" cx="80" cy="260" r="8" />
+          <circle class="node n2" cx="300" cy="210" r="8" />
+          <circle class="node n3" cx="460" cy="250" r="8" />
+          <circle class="node n4" cx="720" cy="260" r="8" />
+          <text x="54" y="300" class="label">PDF</text>
+          <text x="248" y="188" class="label">Parse</text>
+          <text x="420" y="228" class="label">Embed</text>
+          <text x="668" y="300" class="label">RAG</text>
+        </svg>
+      </div>
+
+      <div class="hero-copy">
+        <p class="brand reveal">Utkarsh Yashraj</p>
+        <h1 class="reveal delay-1">AI Full Stack Engineer</h1>
+        <p class="lede reveal delay-2">
+          I build production React interfaces and AI systems that turn complex documents into searchable knowledge — from reusable UI architecture to RAG pipelines on PostgreSQL.
+        </p>
+        <div class="hero-actions reveal delay-3">
+          <a class="btn btn-primary" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/utkarsh-yashraj-195958205/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/utkarshyashraj" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Three years shipping frontend platforms and AI retrieval systems.</p>
+      </div>
+
+      <article class="experience reveal">
+        <div class="exp-meta">
+          <h3>AI Full Stack Developer</h3>
+          <p class="company">Dymensions Inc. · May 2023 – Present · Bengaluru</p>
+        </div>
+        <ul class="exp-list">
+          <li>Built scalable React.js / TypeScript apps with reusable components, Hooks, Context API, and type-safe component APIs.</li>
+          <li>Delivered configurable UI systems (templates, controls, page definitions) with complex form validation and state handling.</li>
+          <li>Integrated REST APIs with Axios and React Query; shipped Telco, SCMUI, and OracleL2Q interfaces and cut page load time by 40%.</li>
+          <li>Owned an end-to-end document intelligence / RAG stack: PDF ingestion, Knowledge Objects, Ollama embeddings, and pgvector search.</li>
+          <li>Implemented hybrid retrieval (exact ID, SQL full-text, vector similarity) with merging, reranking, and context reconstruction.</li>
+          <li>Built FastAPI services and Dockerized AI/backend workloads; maintained shared utils and a global app object for cross-app context.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Selected work from production systems and public GitHub repositories.</p>
+      </div>
+
+      <div class="project-stack">
+        <article class="project featured reveal">
+          <div class="project-kicker">Featured · AI / RAG</div>
+          <h3>Universal Ingestion — Agentic RAG over PDFs</h3>
+          <p>
+            Ingests PDFs into PostgreSQL + pgvector as structured knowledge objects and answers questions with hybrid retrieval,
+            citations, and Ollama for embeddings and generation. Structure-aware parsing instead of naive fixed windows.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>pgvector</span><span>Ollama</span><span>Docker</span><span>RAG</span>
+          </div>
+          <a class="text-link" href="https://github.com/utkarshyashraj/universal_ingestion" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-kicker">Frontend architecture</div>
+          <h3>Configurable Multi-Library UI Controls</h3>
+          <p>
+            Integrated Oracle JET (OJET) and Radix controls behind a shared React component API so additional UI libraries
+            can be added through configuration without rewriting screens.
+          </p>
+          <div class="tags">
+            <span>React.js</span><span>TypeScript</span><span>OJET</span><span>Radix UI</span>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="project-kicker">React · TypeScript</div>
+            <h3>Movie Explorer</h3>
+            <p>React + TypeScript app for discovering movies with search, rating filters, sorting, and responsive grid UI.</p>
+            <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://utkarshyashraj.github.io/Movie-Explorer/" target="_blank" rel="noopener">Live demo →</a>
+              <a class="text-link" href="https://github.com/utkarshyashraj/Movie-Explorer" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-kicker">React · SPA</div>
+            <h3>ShopSphere E-Commerce</h3>
+            <p>E-commerce SPA with product browse, cart totals, login flow, React Router, and Context + useReducer state.</p>
+            <div class="tags"><span>React</span><span>React Router</span><span>Context API</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://utkarshyashraj.github.io/E-Commerce/" target="_blank" rel="noopener">Live demo →</a>
+              <a class="text-link" href="https://github.com/utkarshyashraj/E-Commerce" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-kicker">Python</div>
+            <h3>Python Ingestion</h3>
+            <p>Document ingestion experiments supporting the broader RAG and knowledge-object pipeline work.</p>
+            <div class="tags"><span>Python</span><span>Ingestion</span></div>
+            <a class="text-link" href="https://github.com/utkarshyashraj/Python_ingestion" target="_blank" rel="noopener">GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Tools I use to ship interfaces and AI backends.</p>
+      </div>
+      <div class="skills-wrap reveal">
+        <div>
+          <h4>Languages</h4>
+          <p>JavaScript (ES6+), TypeScript, SQL, Python</p>
+        </div>
+        <div>
+          <h4>Frontend</h4>
+          <p>React.js, React Query, React Router, Context API, Axios, Oracle JET, Radix UI, HTML5, CSS3</p>
+        </div>
+        <div>
+          <h4>Backend</h4>
+          <p>Node.js, Express.js, FastAPI, REST APIs</p>
+        </div>
+        <div>
+          <h4>Data &amp; AI</h4>
+          <p>PostgreSQL, pgvector, MongoDB, RAG, Ollama, Embeddings, Vector Search, MCP</p>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <p>Docker, Git, GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Open to AI full-stack and frontend roles.</p>
+      </div>
+      <div class="contact-row reveal">
+        <a href="mailto:utkarshyashraj@gmail.com">utkarshyashraj@gmail.com</a>
+        <a href="tel:+919162267803">+91 91622 667803</a>
+        <a href="https://www.linkedin.com/in/utkarsh-yashraj-195958205/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/utkarshyashraj" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="edu reveal">B.Tech, Computer Science &amp; Engineering · MIT School of Engineering, Pune · 2019 – 2023</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Utkarsh Yashraj</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
