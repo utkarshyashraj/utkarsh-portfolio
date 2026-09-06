@@ -588,5 +588,12 @@ a {
     width: min(56vw, 220px);
     margin: 0 0 1.15rem;
     animation: none;
+    order: -1;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
