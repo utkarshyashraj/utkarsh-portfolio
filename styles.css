@@ -9,8 +9,8 @@
   --glow: #7fd9b4;
   --brand: #06140f;
   --max: 1120px;
-  --font-display: "Syne", sans-serif;
-  --font-hero: "Source Sans 3", sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-hero: "Outfit", sans-serif;
   --font-body: "Source Sans 3", sans-serif;
 }
 
@@ -30,14 +30,13 @@ body {
     radial-gradient(900px 600px at -10% 20%, rgba(15, 122, 95, 0.12), transparent 50%),
     linear-gradient(180deg, #f7fbf8 0%, var(--paper) 40%, #eef5f0 100%);
   min-height: 100vh;
-  line-height: 1.55;
+  line-height: 1.7;
+  /* Do NOT set overflow-x here — it forces overflow-y to auto and clips glyph ink. */
 }
 
 html {
   scroll-behavior: smooth;
-  /* Prefer hidden over clip: clip + overflow-y:visible can force overflow-y
-     to auto and clip glyph descenders in some browsers. */
-  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .noise {
@@ -80,6 +79,8 @@ a {
   font-weight: 800;
   font-size: 1.15rem;
   letter-spacing: 0.04em;
+  line-height: 1.4;
+  padding-block: 0.15rem;
 }
 
 .nav {
@@ -200,18 +201,31 @@ a {
 }
 
 .brand {
-  margin-bottom: 0.35rem;
+  font-family: var(--font-hero);
+  font-weight: 800;
+  font-size: clamp(3.2rem, 9vw, 5.6rem);
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  color: var(--brand);
+  margin-bottom: 0.55rem;
+  padding-block: 0.04em 0.08em;
   overflow: visible;
 }
 
 .role {
-  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  line-height: 1.45;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+  padding-block: 0.05em;
   overflow: visible;
 }
 
 .lede {
   font-size: clamp(1.05rem, 2vw, 1.2rem);
-  line-height: 1.55;
+  line-height: 1.7;
   color: var(--muted);
   max-width: 36rem;
   margin-bottom: 1.75rem;
@@ -271,14 +285,13 @@ a {
   font-family: var(--font-display);
   font-size: 1.05rem;
   margin-bottom: 0.45rem;
-  line-height: 1.45;
-  padding-block: 0.08em 0.12em;
+  line-height: 1.5;
 }
 
 .highlight p {
   color: var(--muted);
   font-size: 0.98rem;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .section {
@@ -296,9 +309,8 @@ a {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 3.5vw, 2.4rem);
   letter-spacing: -0.02em;
-  line-height: 1.35;
-  margin-bottom: 0.45rem;
-  padding-block: 0.06em 0.14em;
+  line-height: 1.45;
+  margin-bottom: 0.55rem;
   overflow: visible;
 }
 
@@ -375,10 +387,9 @@ a {
 .project h3 {
   font-family: var(--font-display);
   font-size: clamp(1.25rem, 2.4vw, 1.65rem);
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.65rem;
   letter-spacing: -0.02em;
-  line-height: 1.4;
-  padding-block: 0.08em 0.16em;
+  line-height: 1.5;
   overflow: visible;
 }
 
@@ -386,7 +397,7 @@ a {
   color: var(--muted);
   max-width: 52rem;
   margin-bottom: 0.9rem;
-  line-height: 1.65;
+  line-height: 1.7;
   overflow: visible;
 }
 
@@ -400,15 +411,14 @@ a {
 }
 
 .tags span {
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.8rem;
+  display: inline-block;
+  font-size: 0.82rem;
   font-weight: 600;
-  line-height: 1.45;
+  line-height: 1.6;
   color: var(--ink);
   background: rgba(15, 122, 95, 0.1);
   border: 1px solid rgba(15, 122, 95, 0.18);
-  padding: 0.42rem 0.7rem;
+  padding: 0.5rem 0.8rem 0.55rem;
   border-radius: 999px;
   overflow: visible;
 }
@@ -417,6 +427,8 @@ a {
   font-weight: 700;
   color: var(--accent);
   display: inline-block;
+  line-height: 1.6;
+  padding-bottom: 0.1em;
   margin-right: 1.1rem;
 }
 
