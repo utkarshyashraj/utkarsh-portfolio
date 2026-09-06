@@ -22,10 +22,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--font-body);
   color: var(--ink);
@@ -35,7 +31,11 @@ body {
     linear-gradient(180deg, #f7fbf8 0%, var(--paper) 40%, #eef5f0 100%);
   min-height: 100vh;
   line-height: 1.55;
-  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 .noise {
