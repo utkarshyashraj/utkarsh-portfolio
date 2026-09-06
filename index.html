@@ -8,7 +8,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+  <style>
+    /* Hard guarantee: Syne/Outfit descenders must not clip in the hero */
+    .brand,
+    .hero h1 {
+      overflow: visible !important;
+    }
+    .brand span,
+    .hero h1 span {
+      display: inline-block !important;
+      overflow: visible !important;
+      line-height: 1.35 !important;
+      padding-top: 0.15em !important;
+      padding-bottom: 0.35em !important;
+    }
+  </style>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
