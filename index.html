@@ -8,15 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=8" />
   <style>
     .brand-svg,
     .role-svg {
       display: block;
-      width: 100%;
-      max-width: 34rem;
+      width: min(100%, 34rem);
       height: auto;
-      overflow: visible;
+      overflow: visible !important;
     }
     .brand-line {
       font-family: "Source Sans 3", sans-serif;
@@ -67,14 +66,14 @@
 
       <div class="hero-copy">
         <h1 class="brand reveal" aria-label="Utkarsh Yashraj">
-          <svg class="brand-svg" viewBox="0 0 920 250" role="img" aria-hidden="true">
-            <text x="0" y="100" class="brand-line">Utkarsh</text>
-            <text x="0" y="210" class="brand-line">Yashraj</text>
+          <svg class="brand-svg" viewBox="0 0 920 300" role="img" aria-hidden="true">
+            <text x="0" y="105" class="brand-line">Utkarsh</text>
+            <text x="0" y="215" class="brand-line">Yashraj</text>
           </svg>
         </h1>
         <p class="role reveal delay-1" aria-label="AI Full Stack Engineer">
-          <svg class="role-svg" viewBox="0 0 720 100" role="img" aria-hidden="true">
-            <text x="0" y="72" class="role-line">AI Full Stack Engineer</text>
+          <svg class="role-svg" viewBox="0 0 720 120" role="img" aria-hidden="true">
+            <text x="0" y="78" class="role-line">AI Full Stack Engineer</text>
           </svg>
         </p>
         <p class="lede reveal delay-2">
