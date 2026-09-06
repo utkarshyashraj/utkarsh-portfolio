@@ -179,16 +179,19 @@ a {
 
 .hero-photo {
   position: absolute;
-  right: clamp(1rem, 5vw, 3.5rem);
-  top: 52%;
+  right: clamp(1.5rem, 6vw, 4.5rem);
+  top: 48%;
   transform: translateY(-50%);
-  width: min(36vw, 340px);
-  aspect-ratio: 4 / 5;
+  width: min(28vw, 260px);
+  height: min(28vw, 260px);
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 15%;
-  border-radius: 22px;
-  border: 1px solid rgba(16, 34, 28, 0.1);
-  box-shadow: 0 24px 48px rgba(6, 20, 15, 0.16);
+  object-position: center 12%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow:
+    0 0 0 1px rgba(16, 34, 28, 0.08),
+    0 18px 40px rgba(6, 20, 15, 0.18);
   z-index: 1;
   animation: photoIn 0.9s ease both;
 }
@@ -196,11 +199,11 @@ a {
 @keyframes photoIn {
   from {
     opacity: 0;
-    transform: translateY(calc(-50% + 18px));
+    transform: translateY(calc(-50% + 14px)) scale(0.96);
   }
   to {
     opacity: 1;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(1);
   }
 }
 
