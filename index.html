@@ -44,8 +44,8 @@
       </div>
 
       <div class="hero-copy">
-        <p class="brand reveal">Utkarsh Yashraj</p>
-        <h1 class="reveal delay-1">AI Full Stack Engineer</h1>
+        <p class="brand reveal"><span>Utkarsh</span> <span>Yashraj</span></p>
+        <h1 class="reveal delay-1"><span>AI Full Stack Engineer</span></h1>
         <p class="lede reveal delay-2">
           I build production React interfaces and AI systems that turn complex documents into searchable knowledge — from reusable UI architecture to RAG pipelines on PostgreSQL.
         </p>
@@ -57,10 +57,31 @@
       </div>
     </section>
 
+    <section class="highlights section" aria-label="Highlights">
+      <div class="highlights-grid">
+        <article class="highlight reveal">
+          <h3>Frontend systems</h3>
+          <p>React.js, TypeScript, reusable component APIs, configurable templates, and multi-library UI support with OJET and Radix.</p>
+        </article>
+        <article class="highlight reveal">
+          <h3>AI / RAG pipelines</h3>
+          <p>Document ingestion, Knowledge Objects, Ollama embeddings, hybrid SQL + vector retrieval, and LLM-ready context reconstruction.</p>
+        </article>
+        <article class="highlight reveal">
+          <h3>APIs &amp; data</h3>
+          <p>Node.js, Express, FastAPI, PostgreSQL, pgvector, and Dockerized services for reliable local and production workflows.</p>
+        </article>
+        <article class="highlight reveal">
+          <h3>Cross-app reuse</h3>
+          <p>Shared utility functions and a global application object so helpers and context stay consistent across multiple production apps.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="work" class="section">
       <div class="section-head">
         <h2>Experience</h2>
-        <p>Three years shipping frontend platforms and AI retrieval systems.</p>
+        <p>Three years shipping frontend platforms and AI retrieval systems at Dymensions Inc.</p>
       </div>
 
       <article class="experience reveal">
@@ -70,11 +91,12 @@
         </div>
         <ul class="exp-list">
           <li>Built scalable React.js / TypeScript apps with reusable components, Hooks, Context API, and type-safe component APIs.</li>
-          <li>Delivered configurable UI systems (templates, controls, page definitions) with complex form validation and state handling.</li>
-          <li>Integrated REST APIs with Axios and React Query; shipped Telco, SCMUI, and OracleL2Q interfaces and cut page load time by 40%.</li>
-          <li>Owned an end-to-end document intelligence / RAG stack: PDF ingestion, Knowledge Objects, Ollama embeddings, and pgvector search.</li>
-          <li>Implemented hybrid retrieval (exact ID, SQL full-text, vector similarity) with merging, reranking, and context reconstruction.</li>
-          <li>Built FastAPI services and Dockerized AI/backend workloads; maintained shared utils and a global app object for cross-app context.</li>
+          <li>Delivered configurable UI systems for templates, controls, and page definitions, including complex form validation, dirty tracking, focus handling, and error states.</li>
+          <li>Integrated REST APIs with Axios and React Query; shipped Telco, SCMUI, and OracleL2Q interfaces and reduced page load time by 40%.</li>
+          <li>Owned an end-to-end document intelligence / RAG stack: PDF ingestion, structure and table extraction into Knowledge Objects, Ollama embeddings, and PostgreSQL pgvector search.</li>
+          <li>Implemented hybrid retrieval combining exact identifier matching, SQL keyword/full-text search, and vector similarity, with candidate merging, deduplication, reranking, and context reconstruction.</li>
+          <li>Built FastAPI services for ingestion and retrieval endpoints, and containerized AI/backend services with Docker for consistent environments.</li>
+          <li>Maintained shared utility functions and a global application object for cross-application context, enabling consistent reuse across multiple production apps.</li>
         </ul>
       </article>
     </section>
@@ -115,7 +137,7 @@
           <article class="project reveal">
             <div class="project-kicker">React · TypeScript</div>
             <h3>Movie Explorer</h3>
-            <p>React + TypeScript app for discovering movies with search, rating filters, sorting, and responsive grid UI.</p>
+            <p>React + TypeScript app for discovering movies with search, rating filters, sorting, and a responsive grid UI.</p>
             <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span></div>
             <div class="project-links">
               <a class="text-link" href="https://utkarshyashraj.github.io/Movie-Explorer/" target="_blank" rel="noopener">Live demo →</a>
@@ -166,10 +188,21 @@
       </div>
     </section>
 
+    <section id="education" class="section">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p>Foundation in computer science and software engineering.</p>
+      </div>
+      <div class="edu-block reveal">
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <p>MIT School of Engineering, Pune · 2019 – 2023</p>
+      </div>
+    </section>
+
     <section id="contact" class="section contact">
       <div class="section-head">
         <h2>Contact</h2>
-        <p>Open to AI full-stack and frontend roles.</p>
+        <p>Open to AI full-stack and frontend roles in Bengaluru or remote.</p>
       </div>
       <div class="contact-row reveal">
         <a href="mailto:utkarshyashraj@gmail.com">utkarshyashraj@gmail.com</a>
@@ -177,7 +210,6 @@
         <a href="https://www.linkedin.com/in/utkarsh-yashraj-195958205/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/utkarshyashraj" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <p class="edu reveal">B.Tech, Computer Science &amp; Engineering · MIT School of Engineering, Pune · 2019 – 2023</p>
     </section>
   </main>
 
